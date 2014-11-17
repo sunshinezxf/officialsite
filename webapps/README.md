@@ -29,6 +29,8 @@ cd angular-super-seed
 
 ### Install Dependencies
 
+* Install [Ruby](http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.9.3-p550.exe?direct), and then run `gem install sass'.
+
 There are two kinds of dependencies you need for this project:
 * Install grunt `npm install -g grunt-cli`
 

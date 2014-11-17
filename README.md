@@ -20,7 +20,7 @@
 
 # 项目组织结构
 `webapps` 
-
+请先阅读webapps目录下面的README.md文件
 该目录存放官网的所有源代码，包括静态页面(HTML)，JavaScrip(.js), 多媒体文件(图片等)。
 
 `doc`
