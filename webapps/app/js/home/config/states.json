@@ -1,12 +1,45 @@
 {
+
     "home": {
         "path": "/",
-        "templateUrl": "home.html",
+        "templateUrl": "index.html",
         "controller": "HomeCtrl",
         "default": true,
-        "mixins": ["state"],
-        "resolve": {
-            "features": "featuresResolver"
-        }
+        "views":{
+            "header@home":{
+                "templateUrl":"header.html"
+            },
+            "content@home":{
+                "templateUrl":"home.html"
+            },
+            "footer@home":{
+                "templateUrl":"footer.html"
+            },
+            "download@home":{
+                "templateUrl":"download.html"
+            }
+        },
+        "mixins": ["state"]
+    },
+
+    "newer":{
+        "path": "/newer",
+        "templateUrl": "newer.html",
+        "controller": "newerCtrl",
+        "default": true,
+        "mixins": ["state"]
+    },
+
+    "about":{
+        "path": "/about",
+        "templateUrl": "about.html",
+        "controller": "AboutCtrl",
+        "default": true,
+        "mixins": ["state"]
+    },
+
+    "default":{
+        "path":"/"
     }
+
 }
