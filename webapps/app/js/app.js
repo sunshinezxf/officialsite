@@ -5,6 +5,7 @@
  */
 angular.module('app.common', []);
 angular.module('app.home', ['ui.router']);
+angular.module('app.about', ['ui.router']);
 
 angular.module('app', ['app.home', 'app.common', 'ngSanitize', 'ngAnimate', 'ui.router', 'svgPng'])
     .value('version', '0.1')
