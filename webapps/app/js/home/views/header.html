@@ -1,16 +1,17 @@
-<div id="header" class="header">
-    <p id="logo" class="_h"><a href="#"><img src="/app/img/general/logo.jpg" alt="金豆荚" title="金豆荚"></a></p>
-
-    <div id="nav" class="nav">
-        <span class="_nav _h"><a>首页</a></span>
-        <span class="_nav _h"><a>新手引导</a></span>
-        <span class="_nav _h"><a>关于我们</a></span>
-    </div>
-    <div id="call" class="call">
-        <p><a href="#"><img src="/app/img/general/call.jpg"></a></p>
-
-        <p id="a_call">客服热线（工作日 9:00-21:00）</p>
-
-        <p id="b_call">400-888-8888</p>
+<div ui-view="header">
+    <div id="header" class="header mid module">
+        <div class="fl"><p class="fl"><a href="#">
+            <img src="/img/general/logo/logo.png" alt="金豆荚" title="金豆荚">
+        </a></p></div>
+        <ul class="nav navbar-nav"style="width: 400px">
+            <li class="active"><a href="#">首页</a></li>
+            <li><a href="#">新手引导</a></li>
+            <li><a href="#">关于我们</a></li>
+        </ul>
+        <div id="call" class="call fr font_normal">
+            <p id="a_call"><a href="#"><img src="/img/icons/kf.png"></a>客服热线（工作日 9:00-21:00）<br>
+                <span style="color: #ff4040">400-888-8888</span></p>
+            <p class="klear"></p>
+        </div>
     </div>
 </div>
