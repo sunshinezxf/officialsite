@@ -1,45 +1,104 @@
 {
-
     "home": {
         "path": "/",
-        "templateUrl": "index.html",
+        "templateUrl": "template.html",
         "controller": "HomeCtrl",
         "default": true,
-        "views":{
-            "header@home":{
-                "templateUrl":"header.html"
-            },
-            "content@home":{
-                "templateUrl":"home.html"
-            },
-            "footer@home":{
-                "templateUrl":"footer.html"
-            },
-            "download@home":{
-                "templateUrl":"download.html"
-            }
+        "resolve": {
+            "features": "featuresResolver"
         },
-        "mixins": ["state"]
+        "mixins": ["state"],
+        "views":{
+            "content@home":{
+                "templateUrl":"/main/main.html"
+            }
+        }
     },
 
     "newer":{
         "path": "/newer",
-        "templateUrl": "newer.html",
-        "controller": "newerCtrl",
-        "default": true,
-        "mixins": ["state"]
+        "templateUrl": "template.html",
+        "controller": "HomeCtrl",
+        "resolve": {
+            "features": "featuresResolver"
+        },
+        "mixins": ["state"],
+        "views":{
+            "content@newer":{
+                "templateUrl":"/other/newer.html"
+            }
+        }
     },
 
-    "about":{
-        "path": "/about",
-        "templateUrl": "about.html",
-        "controller": "AboutCtrl",
-        "default": true,
-        "mixins": ["state"]
+    "certification":{
+        "path": "/about/certification",
+        "templateUrl": "template.html",
+        "controller": "HomeCtrl",
+        "resolve": {
+            "features": "featuresResolver"
+        },
+        "mixins": ["state"],
+        "views":{
+            "header@certification":{
+                "templateUrl":"/about/guider.html"
+            },
+            "content@certification":{
+                "templateUrl":"/about/certification.html"
+            }
+        }
     },
 
-    "default":{
-        "path":"/"
+    "introduction":{
+        "path": "/about/introduction",
+        "templateUrl": "template.html",
+        "controller": "HomeCtrl",
+        "resolve": {
+            "features": "featuresResolver"
+        },
+        "mixins": ["state"],
+        "views":{
+            "header@introduction":{
+                "templateUrl":"/about/guider.html"
+            },
+            "content@introduction":{
+                "templateUrl":"/about/introduction.html"
+            }
+        }
+    },
+
+    "contact":{
+        "path": "/about/contact",
+        "templateUrl": "template.html",
+        "controller": "HomeCtrl",
+        "resolve": {
+            "features": "featuresResolver"
+        },
+        "mixins": ["state"],
+        "views":{
+            "header@contact":{
+                "templateUrl":"/about/guider.html"
+            },
+            "content@contact":{
+                "templateUrl":"/about/contactUs.html"
+            }
+        }
+    },
+
+    "join":{
+        "path": "/about/join",
+        "templateUrl": "template.html",
+        "controller": "HomeCtrl",
+        "resolve": {
+            "features": "featuresResolver"
+        },
+        "mixins": ["state"],
+        "views":{
+            "header@join":{
+                "templateUrl":"/about/guider.html"
+            },
+            "content@join":{
+                "templateUrl":"/about/joinUs.html"
+            }
+        }
     }
-
 }

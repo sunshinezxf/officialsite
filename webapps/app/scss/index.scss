@@ -9,30 +9,16 @@
   margin-right: auto;
 }
 
-.font_large {
-  font-size: 16pt;
-  font-family: "Microsoft YaHei", "MicrosoftJhengHei";
-}
-
-.font_normal {
-  font-size: 14pt;
-  font-family: "Microsoft YaHei", "MicrosoftJhengHei";
-}
-
-.font_number {
-  font-size: 6pt;
-  font-family: "Arial";
-}
-
-.font_call {
-  font-size: 36pt;
-  font-family: "Arial";
-  color:#FF4040;
-}
-
 #body{
 
 }
+
+._divider{
+  background-image:url(../../../img/general/4.png);
+  background-repeat: repeat center 0 ;
+  height: 5px ;
+}
+
 /*float start*/
 .fl {
   float: left;
@@ -48,34 +34,15 @@
 
 /*float end*/
 /*header started*/
+#nav{
+  width: 300px;
+  margin-left: 300px;
+}
+
 .header {
-  height: 86px;
-  margin-top: 50px;
-  background: #fff;
-}
-
-#header div {
-  width: 30%;
-}
-
-.nav {
-  width: 200px;
-}
-
-.span {
-  margin-right: 12px;
-  margin-top: 16px;
-}
-
-.span a {
-  padding-left: 20px;
-  color: #000;
-}
-
-.span a:hover {
-  color: #d91d1f;
-  text-decoration: none;
-  background: url(img/general/4.png) no-repeat left center;
+  height: 50px;
+  margin-top: 36px;
+  background: #ffeeff;
 }
 
 /*header end*/
@@ -91,17 +58,36 @@
 
 /*main start */
 #myCarousel{
-  height: 600px;
+  height: 330px;
+  padding-bottom: 20px;
 }
 
-#Jin_Dou div {
-  width: 50%;
+#jd{
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #b9b9b9;
   height: 260px;
+}
+
+#jd >div {
+  margin-left: 40px;
+  margin-top: 10px;
+  text-align: center;
+  width: 400px;
+}
+
+#jd >div h3{
+  font-size: 16pt;
+}
+
+#jd >div p{
+  font-size: 12pt;
 }
 
 #board{
+  margin-top: 20px;
   height: 260px;
-  padding-top: 5px;
 }
 
 /*main end */
@@ -112,6 +98,7 @@
   height: 170px;
   text-align: center;
   padding-top: 20px;
+  bottom: 5px;
 }
 
 #footer-top {
@@ -264,6 +251,12 @@
   margin-left: 10px;
 }
 
-//
+#img_guide{
+  padding-top: 144px
+}
 
+#img_load{
+  padding-top: 90px ;
+  margin-bottom:86px
+}
 

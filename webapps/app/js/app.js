@@ -5,12 +5,12 @@
  */
 angular.module('app.common', []);
 angular.module('app.home', ['ui.router']);
-angular.module('app.about', ['ui.router']);
 
-angular.module('app', ['app.home', 'app.common', 'ngSanitize', 'ngAnimate', 'ui.router', 'svgPng'])
+angular.module('app', ['app.home', 'app.common','ngSanitize', 'ngAnimate', 'ui.router', 'svgPng'])
     .value('version', '0.1')
-    .config(['config', '$httpProvider', '$stateProvider', '$urlRouterProvider', 'template',
-        function(config, $httpProvider, $stateProvider, $urlRouterProvider, template) {
+    .config(['config', '$httpProvider', '$stateProvider', '$urlRouterProvider','$locationProvider', 'template',
+        function(config, $httpProvider, $stateProvider, $urlRouterProvider, $locationProvider, template) {
+            $locationProvider.html5Mode(true);
             var _states = config['states'], _defaultPath = '/',
                 _registerState = function(name, stateConfig) {
 
