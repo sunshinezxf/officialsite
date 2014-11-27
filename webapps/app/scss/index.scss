@@ -14,7 +14,7 @@
 }
 
 ._divider{
-  background-image:url(../../../img/general/4.png);
+  background-image:url(../../../img/general/line/4.jpg);
   background-repeat: repeat center 0 ;
   height: 5px ;
 }
@@ -37,6 +37,11 @@
 #nav{
   width: 300px;
   margin-left: 300px;
+}
+
+#nav >li >a{
+  font-size: 14pt;
+  font-weight: 500;
 }
 
 .header {
@@ -79,10 +84,12 @@
 
 #jd >div h3{
   font-size: 16pt;
+  font-weight: 600;
 }
 
 #jd >div p{
   font-size: 12pt;
+  font-weight: 600;
 }
 
 #board{
@@ -95,6 +102,7 @@
 /*footer start*/
 .footer {
   margin: 0 auto;
+  margin-bottom: 0px;
   height: 170px;
   text-align: center;
   padding-top: 20px;
@@ -132,8 +140,8 @@
 #download {
   width: 150px;
   height: 126px;
-  position: absolute;
-  top: 440px;
+  position: fixed;
+  top: 450px;
   left:1440px;
 }
 
@@ -201,7 +209,6 @@
 }
 
 #down-l a {
-  background: url(../imagesnew/1.png) no-repeat -48px -28px;
   display: block;
   width: 20px;
   height: 23px;
@@ -209,7 +216,6 @@
 }
 
 #down-r a {
-  background: url(../imagesnew/1.png) no-repeat -48px 0px;
   display: block;
   width: 20px;
   height: 24px;
@@ -260,3 +266,12 @@
   margin-bottom:86px
 }
 
+
+#myCarousel >div{
+  height: 330px;
+}
+
+#myCarousel >div >div >img{
+  display: block;
+  margin: 0 auto;
+}

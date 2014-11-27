@@ -1,0 +1,69 @@
+.font_large {
+  font-size: 18pt;
+  font-family: "Microsoft YaHei", "MicrosoftJhengHei";
+}
+
+.font_normal {
+  font-size: 14pt;
+  font-family: "Microsoft YaHei", "MicrosoftJhengHei";
+}
+
+.font_number {
+  font-size: 6pt;
+  font-family: "Arial";
+}
+
+.font_call {
+  font-size: 36pt;
+  font-family: "Arial";
+}
+
+.font_h{
+  font-family: STHeiti;
+  font-size: 16pt;
+}
+
+.red{
+  color: #e54d42;
+}
+
+.green{
+  color: #008000;
+}
+
+.default_white{
+  color: #fff;
+}
+
+
+
+#nav >li >a:visited{
+  background-color: #e54d42;
+  color: #000;
+  font-size: 18pt;
+  font-weight: 900;
+}
+
+#nav1 >li >a:visited{
+  background-color: #e54d42;
+  color: #000;
+  font-size: 18pt;
+  font-weight: 900;
+}
+
+#nav1 >li >a:link{
+  color: #000;
+  font-size: 12pt;
+  font-weight: 900;
+}
+
+#back h2{
+  font-size: 30pt;
+  color: #8c5b00;
+}
+
+#back p{
+  font-size: 12pt;
+  color: #8c5b00;
+}
+

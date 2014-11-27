@@ -1,51 +1,131 @@
-.left{
-  width: 480px;
-  height: 520px;
+
+/* guider start */
+#guider{
+  width: 1000px;
+  height:60px;
 }
 
-.right{
-  width: 480px;
-  height: 520px;
+#nav1{
+  background-color: #ecf1ef;
+  width: 1000px;
+  font-color: #000;
+  font-size: 12pt;
+  font-weight: 900;
+}
+/* guider end */
+
+/* certification start */
+
+#cer{
+  border: 1px solid #696969;
+  margin-bottom: 46px;
+  text-align: center;
+  height: 1632px;
 }
 
-#introduction_pic{
-  margin-top: 200px;
-  width: 220px;
+#cer >div{
+  height: 544px;
 }
 
-#introduction_text{
+/* certification end */
+
+
+/*introduction related*/
+#introduction{
+  height: 350px;
+  border:1px solid #696969;
+}
+
+#introduction >div>img{
+  margin-left: 90px;
+  margin-top: 90px;
+  width: 150px;
+}
+
+#introduction >div >p{
+  margin-left: 30px;
   margin-top: 120px;
-  width: 720px;
+  font-weight: 600;
+  width: 700px;
 }
 
-.cer_pic{
-  height: 400px;
-  overflow: hidden;
+/* end */
+
+/* contact start */
+#contact{
+  border: 1px solid #696969;
+  height: 670px;
 }
 
-.contact_pic{
-  float: left;
-  height: 120px;
-  width:120px;
-  margin-right: 0px;
-  overflow: hidden;
+#contact_l{
+  width: 480px;
 }
 
-.text{
-  margin-left: 10px;
+#contact_r{
+  margin-right: 80px;
+}
+
+#contact >div {
+  margin-top: 80px;
 }
 
 .list_div{
-  clear: both ;
-  width:400px ;
-  height: 100px;
+  margin-top: 20px;
+  margin-left: 70px;
+  width: 400px;
 }
 
-.map_pic{
-  clear:both;
-  width:400px;
-  height: 400px;
+.list_div >div{
+  float: left;
 }
+
+.list_div >div >h4 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: 20px;
+}
+
+.list_div >div >p {
+  margin-left: 20px;
+  font-weight: 600;
+}
+/* contact end */
+
+/* join us start */
+#join{
+  display: table;
+  height: 100%;
+  border: 1px solid #696969;
+  margin-bottom: 70px;
+}
+
+#join_l{
+  margin-left: 54px;
+  margin-top: 48px;
+  width: 382px;
+}
+
+#join_l >h4{
+  font-size: 25pt;
+  font-weight: 800;
+}
+
+#join_l >p >span{
+  font-weight: 600;
+}
+
+#join_l >p{
+  font-weight: 400 ;
+}
+
+#accordion{
+  margin-right: 46px;
+  margin-top: 44px;
+  width: 456px;
+  margin-bottom: 200px;
+}
+
+/* join us end */
 
 .back{
   background-repeat: repeat-x repeat-y ;
@@ -66,21 +146,4 @@
   width: 820px;
   font-family: "Microsoft YaHei", "MicrosoftJhengHei", STHeiti, MingLiu;
 }
-
-#myCarousel >div{
-  height: 330px;
-}
-
-#myCarousel >div >div >img{
-  display: block;
-  margin: 0 auto;
-}
-
-#nav1{
-  background-color: #b9b9b9;
-  font-color: #000;
-  font-size: 12pt;
-  font-weight: 900;
-}
-
 
