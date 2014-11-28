@@ -21,7 +21,7 @@ $brown:#8c5b00;
 }
 
 @mixin font1{
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -114,6 +114,9 @@ $brown:#8c5b00;
     >p{
       color: $red;
       @include font2;
+      >span{
+        font-size: 16px;
+      }
     }
   }
 
@@ -188,6 +191,10 @@ $brown:#8c5b00;
 #ft-left{
  float:left;
  margin-top: 20px;
+  >span >a{
+    color: #696969;
+    @include font2;
+  }
 }
 
 #ft-right{
