@@ -21,12 +21,12 @@ $brown:#8c5b00;
 }
 
 @mixin font1{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 
 @mixin font2{
-  font-size:14px;
+  font-size:20px;
   font-weight: 100;
 }
 
@@ -112,10 +112,14 @@ $brown:#8c5b00;
   >div {
     padding-top: 12px;
     >p{
-      color: $red;
+      color: #828282;
       @include font2;
       >span{
-        font-size: 16px;
+        color: $red;
+        font-size: 18px;
+      }
+      >img{
+        padding-top: 0px;
       }
     }
   }
@@ -140,6 +144,7 @@ $brown:#8c5b00;
 }
 
 #jd{
+  background-color: $white;
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -166,41 +171,52 @@ $brown:#8c5b00;
 
 #board{
   margin-top: 20px;
+
   height: 260px;
+  >div{
+    @include border;
+    width: 495px;
+    background-color: $white;
+  }
 }
 
 /*main end */
 
 /*footer start*/
 .footer {
+  background-color: $white;
   margin-bottom: 0px;
   height: 170px;
   text-align: center;
 }
 
 #footer-top {
-  height: 50px;
+  height: 60px;
   @include clear;
 }
 
 #footer-middle {
-  height: 66px;
+  height: 56px;
   @include clear;
 }
 
 #ft-left{
  float:left;
- margin-top: 20px;
   >span >a{
     color: #696969;
-    @include font2;
+    font-size: 14px;
+    font-weight: 300;
   }
 }
 
 #ft-right{
   float:right;
+  text-align: left;
+  padding-right: 21px;
+  padding-bottom: 0px;
   >p{
-    @include font2;
+    font-size: 14px;
+    font-weight: 300;
     font-family: "Microsoft YaHei", "MicrosoftJhengHei";
   }
 }
@@ -212,6 +228,8 @@ $brown:#8c5b00;
     padding-bottom: 20px;
   }
   >span{
+    font-size: 36px;
+    padding-left: 20px;
     color: $red;
   }
 }
