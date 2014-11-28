@@ -14,91 +14,71 @@
     <title>艺岳资产管理</title>
     <meta name="description" content="">
     <link rel="shortcut icon" href="/img/icons/favicon.ico" type="image/x-icon">
-    <link rel='stylesheet' href='css/style.css' type='text/css'/>
-    <link rel='stylesheet' href='css/index.css' type='text/css'/>
-    <link rel='stylesheet' href='css/about.css' type='text/css'/>
-    <link rel='stylesheet' href='css/font.css' type='text/css'/>
 
     <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='css/style.css' type='text/css'/>
+    <link rel='stylesheet' href='css/index.css' type='text/css'/>
+    <link rel='stylesheet' href='css/font.css' type='text/css'/>
 
     <script src='js/modernizr-custom.js'></script>
 </head>
 <body ng-app="app" id="body">
 
 <div class="app__wrapper">
-    <div>
-        <div class="header mid module" id="header">
-            <div class="fl">
-                <p>
-                    <a href="#">
-                        <img src="/img/general/shared/logo/logo.png" alt="金豆荚" title="金豆荚">
-                    </a>
-                </p>
-            </div>
-            <div>
-                <ul class="nav navbar-nav" id="nav">
-                    <li><a href="/">首页</a></li>
-                    <li><a href="/newer">新手引导</a></li>
-                    <li><a href="/about/certification">关于我们</a></li>
-                </ul>
-            </div>
-            <div class="fr font_normal">
-                <p><a href="#"><img src="img/general/homepage/contact/server.png"></a>客服热线<br>
-                    <span class="red">400-728-0153</span></p>
-            </div>
-        </div>
-        <div class="_divider"></div>
+    <div class="mid module">
+        <a href="#" style="float:left">
+            <img src="/img/general/shared/logo/logo.png" alt="金豆荚" title="金豆荚">
+        </a>
     </div>
+    <div class="mid module" id="header">
+        <div>
+            <ul class="nav navbar-nav" id="nav">
+                <li><a href="/">首页</a></li>
+                <li><a href="/newer">新手引导</a></li>
+                <li><a href="/about/certification">关于我们</a></li>
+            </ul>
+        </div>
+        <div class="fr font_normal">
+            <p><a href="#"><img src="img/general/homepage/contact/server.png"></a>客服热线<br>
+                <span class="red">400-728-0153</span></p>
+        </div>
+    </div>
+    <div class="_divider"></div>
 
     <div ui-view></div>
 
-    <div>
-        <div id="footer" class="footer">
-            <div id="footer_top" class="klear module mid">
-                <div id="ft-left" class="fl">
-                    <span class="span font-normal"><a href="/about/introduction" rel="nofollow">关于我们</a></span>
-                    <span class="font-normal span"><a href="/newer" rel="nofollow">|&nbsp新手引导</a></span>
-                    <span class="font-normal span"><a href="" rel="nofollow">|&nbsp帮助中心</a></span>
-                    <span class="font-normal span"><a href="" rel="nofollow">|&nbsp合作伙伴</a></span>
-                    <span class="font-normal span"><a href="" rel="nofollow">|&nbsp安全保障</a></span>
-                    <span class="font-normal span"><a href="/about/join" rel="nofollow">|&nbsp加入我们</a></span>
-                    <span class="font-normal span"><a href="/about/contact" rel="nofollow">|&nbsp联系我们</a></span>
-                </div>
-                <div id="ft-right" class="fr">
-                    <p id="f_mail" class="font_normal">客服邮箱：services@sunlights.me<br> 客服热线（工作日 9:00-21:00)</p>
-                </div>
+    <div class="footer">
+        <div id="footer_top" class="klear module mid">
+            <div id="ft-left">
+                <span class="span"><a href="/about/introduction" rel="nofollow">关于我们</a></span>
+                <span class="font-normal span"><a href="/newer" rel="nofollow">|&nbsp新手引导</a></span>
+                <span class="font-normal span"><a href="" rel="nofollow">|&nbsp帮助中心</a></span>
+                <span class="font-normal span"><a href="" rel="nofollow">|&nbsp合作伙伴</a></span>
+                <span class="font-normal span"><a href="" rel="nofollow">|&nbsp安全保障</a></span>
+                <span class="font-normal span"><a href="/about/join" rel="nofollow">|&nbsp加入我们</a></span>
+                <span class="font-normal span"><a href="/about/contact" rel="nofollow">|&nbsp联系我们</a></span>
             </div>
-            <div id="footer_middle" class="klear module mid">
-                <div id="fm-left" class="fl">
-                    <span><a href="" rel="nofollow" target="_blank"><img src="img/general/pic/7.png" alt=""
-                                                                         title=""></a></span>
-                    <span><a href="" rel="nofollow" target="_blank"><img src="img/general/pic/8.png" alt=""
-                                                                         title=""></a></span>
-                    <span><a href="" rel="nofollow" target="_blank"><img src="img/general/pic/9.png" alt=""
-                                                                         title=""></a></span>
-                    <span><a href="" rel="nofollow" target="_blank"><img src="img/general/pic/10.png" alt=""
-                                                                         title=""></a></span>
-                    <span><a href="" rel="nofollow" target="_blank"><img src="img/general/pic/11.png" alt=""
-                                                                         title=""></a></span>
-                </div>
-                <div id="fm-right" class="fr">
-                    <span id="weibo"><img src="img/general/homepage/contact/sina.png"></span>
-                    <span id="weixin"><img src="img/general/homepage/contact/weixin.png"></span>
-                    <span id="qq"><img src="img/general/homepage/contact/qq.png"></span>
-                    <span class="font_call red">400-728-0153</span>
-                </div>
-            </div>
-            <div id="footer_bottom" class="klear mid">
-                <p class="fb default_white"><span class="font_number">2014 Shanghai YiYue Investment Management Co., Ltd. All Rights Reserved.
-                            沪ICP备13015820号-1</span>
-                </p>
+            <div id="ft-right">
+                <p>客服邮箱：services@sunlights.me<br> 客服热线（工作日 9:00-21:00)</p>
             </div>
         </div>
+        <div id="footer_middle" class="module mid">
+            <div id="fm-left" class="fl">
+                <img src="img/general/shared/15.png">
+            </div>
+            <div id="fm-right" class="fr">
+                <img src="img/general/shared/18.png">
+                <span class="font_call red">400-728-0153</span>
+            </div>
+        </div>
+        <div class="mid" id="footer">
+            <p>
+                <span>2014 Shanghai YiYue Investment Management Co., Ltd. All Rights Reserved.沪ICP备13015820号-1</span>
+            </p>
+        </div>
     </div>
-
 </div>
+
 <!-- build:js js/vendors.js -->
 <script type="text/javascript" src="bower_vendor/es5-shim/es5-shim.js"></script>
 <script type="text/javascript" src="bower_vendor/jquery/dist/jquery.js"></script>

@@ -1,5 +1,58 @@
-.module {
+/*shared*/
+
+$red: #e54d42;
+$white: #fff;
+$black: #000;
+$gray: #ebebeb;
+$green: #00FF00;
+$orange: #FFBB66;
+$brown:#8c5b00;
+
+@mixin clear {
+  clear : both;
+}
+
+@mixin relative{
   position: relative;
+}
+
+@mixin border{
+  border: 1px solid  $gray;
+}
+
+@mixin font1{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@mixin font2{
+  font-size:14px;
+  font-weight: 100;
+}
+
+@mixin font3{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+@mixin font4{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@mixin font5{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@mixin font6{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* end */
+.module {
+  @include relative;
   width: 1000px;
 }
 
@@ -9,14 +62,10 @@
   margin-right: auto;
 }
 
-#body{
-
-}
-
 ._divider{
   background-image:url(../../../img/general/line/4.jpg);
   background-repeat: repeat center 0 ;
-  height: 5px ;
+  height: 3px ;
 }
 
 /*float start*/
@@ -36,18 +85,38 @@
 /*header started*/
 #nav{
   width: 300px;
+  padding-top: 22px;
   margin-left: 300px;
+  >li{
+    &:visited{
+      background-color: $red;
+    }
+    &:hover{
+      background-color: #b5d592;
+    }
+    &:link{
+      background-color: $white;
+    }
+    >a{
+      @include font1;
+      color:$black;
+      &:visited{
+        font: $white;
+      }
+    }
+  }
 }
 
-#nav >li >a{
-  font-size: 14pt;
-  font-weight: 500;
-}
+#header{
+  height: 86px;
+  >div {
+    padding-top: 12px;
+    >p{
+      color: $red;
+      @include font2;
+    }
+  }
 
-.header {
-  height: 50px;
-  margin-top: 36px;
-  background: #ffeeff;
 }
 
 /*header end*/
@@ -71,25 +140,25 @@
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border: 1px solid #b9b9b9;
+  @include clear;
+  @include border;
   height: 260px;
-}
-
-#jd >div {
-  margin-left: 40px;
-  margin-top: 10px;
-  text-align: center;
-  width: 400px;
-}
-
-#jd >div h3{
-  font-size: 16pt;
-  font-weight: 600;
-}
-
-#jd >div p{
-  font-size: 12pt;
-  font-weight: 600;
+  >div{
+    margin-left: 40px;
+    margin-top: 10px;
+    text-align: center;
+    width: 400px;
+    >h3{
+      @include font3;
+      >span{
+        color:$orange;
+        font-size:30px;
+      }
+    }
+    >p{
+      @include font5;
+    }
+  }
 }
 
 #board{
@@ -101,37 +170,59 @@
 
 /*footer start*/
 .footer {
-  margin: 0 auto;
   margin-bottom: 0px;
   height: 170px;
   text-align: center;
-  padding-top: 20px;
-  bottom: 5px;
 }
 
 #footer-top {
   height: 50px;
+  @include clear;
 }
 
 #footer-middle {
-  height: 76px;
-}
-
-#footer-bottom {
-  height: 44px;
-  overflow: auto;
+  height: 66px;
+  @include clear;
 }
 
 #ft-left{
-  margin-top: 10px;
+ float:left;
+ margin-top: 20px;
 }
-.fb {
-  font-size: 44px;
-  padding: 0px;
-  margin: 0px;
-  bottom: 0px;
-  color: #FF4040;
-  background-color: #FF4040;
+
+#ft-right{
+  float:right;
+  >p{
+    @include font2;
+    font-family: "Microsoft YaHei", "MicrosoftJhengHei";
+  }
+}
+#fm-left{
+  @include clear;
+}
+#fm-right{
+  >img{
+    padding-bottom: 20px;
+  }
+  >span{
+    color: $red;
+  }
+}
+
+#footer {
+  @include clear;
+  background-color: $red ;
+  height: 44px;
+  width:100%;
+  >p {
+    padding-top: 10px;
+    @include font2;
+    font-family: Arial;
+    color:$white;
+    >span{
+      font-size: 12px;
+    }
+  }
 }
 
 /*footer end*/
@@ -147,13 +238,13 @@
 
 #download-con {
   background: #fff;
-  border: 1px #ebebeb solid;
+  @include border;
   height: 258px;
 }
 
 #down-1 {
   text-align: center;
-  font-size: 14px;
+  font-size: 14pt;
   color: #302f2f;
   margin-top: 18px;
   padding-bottom: 18px;
@@ -239,24 +330,6 @@
 
 /*download end*/
 
-#weibo {
-  cursor: pointer;
-  margin-top: 8px;
-  margin-left: 27px;
-}
-
-#weixin {
-  cursor: pointer;
-  margin-top: 8px;
-  margin-left: 10px;
-}
-
-#qq {
-  cursor: pointer;
-  margin-top: 8px;
-  margin-left: 10px;
-}
-
 #img_guide{
   padding-top: 144px
 }
@@ -274,4 +347,163 @@
 #myCarousel >div >div >img{
   display: block;
   margin: 0 auto;
+}
+
+
+/* guider start */
+#guider{
+  margin-top: 20px;
+  width: 1000px;
+  height:50px;
+}
+
+#nav1{
+  background-color: $gray;
+  width: 1000px;
+  color: $black;
+  @include font3;
+}
+/* guider end */
+
+/* certification start */
+
+#cer{
+  @include border;
+  margin-bottom: 46px;
+  text-align: center;
+  height: 1632px;
+  >div{
+    height: 544px;
+  }
+}
+
+/* certification end */
+
+
+/*introduction related*/
+#introduction{
+  height: 350px;
+  @include border;
+  >div>img{
+    margin-left: 90px;
+    margin-top: 90px;
+    width: 150px;
+  }
+  >div >p{
+    margin-left: 30px;
+    margin-top: 120px;
+    font-weight: 600;
+    width: 700px;
+  }
+}
+
+/* end */
+
+/* contact start */
+#contact{
+  @include border;
+  height: 670px;
+  >div {
+    margin-top: 80px;
+    >img{
+      margin-right: 80px;
+    }
+  }
+}
+
+#contact_l{
+  width: 480px;
+}
+
+.list_div{
+  margin-top: 20px;
+  margin-left: 70px;
+  width: 400px;
+  >div{
+    float: left;
+    >h4 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-left: 20px;
+    }
+    >p {
+      margin-left: 20px;
+      font-weight: 600;
+    }
+  }
+}
+
+/* contact end */
+
+/* join us start */
+#join{
+  display: table;
+  height: 100%;
+  @include border;
+  margin-bottom: 70px;
+}
+
+#join_l{
+  margin-left: 54px;
+  margin-top: 48px;
+  width: 382px;
+  >h4{
+    font-size: 25pt;
+    font-weight: 800;
+  }
+  >p{
+    font-weight: 400 ;
+    >span{
+      font-weight: 600;
+    }
+  }
+}
+
+#accordion{
+  margin-right: 46px;
+  margin-top: 44px;
+  width: 456px;
+  margin-bottom: 200px;
+}
+
+/* join us end */
+
+.back{
+  background-repeat: repeat-x repeat-y ;
+  background-image:url(../../../img/general/newer/back/8.jpg) ;
+  height: 700px;
+}
+
+.part{
+  height: 640px;
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#back{
+  height: 100px;
+  padding-top: 30px;
+  width: 820px;
+  font-family: "Microsoft YaHei", "MicrosoftJhengHei", STHeiti, MingLiu;
+  h2{
+    @include font6;
+    color: $brown;
+  }
+  p{
+    @include font5;
+    color: $brown;
+  }
+}
+
+
+#nav1 >li >a:visited{
+  background-color: $red;
+  color:$black;
+  @include font4;
+}
+
+#nav1 >li >a:link{
+  color: $black;
+  @include font5;
 }
