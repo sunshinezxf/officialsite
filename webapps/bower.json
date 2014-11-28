@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": "<2.0.0",
     "json3": "~3.3.0",
+    "bootstrap": "~3.0.3",
     "es5-shim": "~2.0.8",
     "angular": "1.2.15",
     "angular-mocks": "v1.2.14",
