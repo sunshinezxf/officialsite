@@ -36,10 +36,17 @@
     </div>
     <div class="mid module" id="header">
         <div>
-            <ul class="nav navbar-nav" id="nav">
-                <li><a href="/">首页</a></li>
-                <li><a href="/newer">新手引导</a></li>
-                <li><a href="/about/certification">关于我们</a></li>
+
+            <ul class="nav navbar-nav" id="nav" role="navigation">
+                <li ui-sref-active="active" class="headActiveTab" >
+                    <a ui-sref="home">首页</a>
+                </li>
+                 <li ui-sref-active="active">
+                    <a ui-sref="newer">新手引导</a>
+                </li>
+                 <li ui-sref-active="active">
+                    <a ui-sref="introduction">关于我们</a>
+                </li>
             </ul>
         </div>
         <div class="fr font_normal">
