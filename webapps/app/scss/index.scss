@@ -85,32 +85,36 @@ $brown:#8c5b00;
 /*header started*/
 #nav{
   width: 300px;
-  padding-top: 22px;
+  padding-top: 25px;
   margin-left: 300px;
   >li{
-    &:visited{
+    >a{
+      @include font1;
+      color: $black;
+    }
+    :visited{
       background-color: $red;
     }
-    &:hover{
-      background-color: #b5d592;
+    :hover{
+      background-color: $red;
+      >a{
+        color:$white;
+      }
     }
     &:link{
       background-color: $white;
     }
-    >a{
-      @include font1;
-      color:$black;
-      &:visited{
-        font: $white;
-      }
-    }
   }
+}
+
+#header li.active{
+    background-color:$red;
 }
 
 #header{
   height: 86px;
   >div {
-    padding-top: 12px;
+    padding-top: 11px;
     >p{
       color: #828282;
       @include font2;
@@ -355,25 +359,18 @@ $brown:#8c5b00;
 
 /*download end*/
 
-#img_guide{
-  padding-top: 144px
-}
-
 #img_load{
   padding-top: 90px ;
   margin-bottom:86px
 }
 
-
 #myCarousel >div{
   height: 330px;
+  >div >img{
+    display: block;
+    margin: 0 auto;
+  }
 }
-
-#myCarousel >div >div >img{
-  display: block;
-  margin: 0 auto;
-}
-
 
 /* guider start */
 #guider{
@@ -385,8 +382,13 @@ $brown:#8c5b00;
 #nav1{
   background-color: $gray;
   width: 1000px;
-  color: $black;
-  @include font3;
+  >li.active{
+    border-bottom: 4px $red solid;
+  }
+  >li>a{
+    font-size: 18px;
+    color: $black;
+  }
 }
 /* guider end */
 
@@ -493,24 +495,29 @@ $brown:#8c5b00;
 
 /* join us end */
 
+#newer{
+  margin-bottom: 86px;
+  h2{
+    font-size: 22px;
+  }
+  >img{
+      padding-top: 14px;
+  }
+}
+
 .back{
   background-repeat: repeat-x repeat-y ;
   background-image:url(../../../img/general/newer/back/8.jpg) ;
   height: 700px;
-}
-
-.part{
-  height: 640px;
-  text-align: left;
-  margin-top: auto;
-  margin-bottom: auto;
+  >div>img{
+    margin-top: 144px;
+  }
 }
 
 #back{
   height: 100px;
   padding-top: 30px;
   width: 820px;
-  font-family: "Microsoft YaHei", "MicrosoftJhengHei", STHeiti, MingLiu;
   h2{
     @include font6;
     color: $brown;
@@ -521,14 +528,10 @@ $brown:#8c5b00;
   }
 }
 
-
-#nav1 >li >a:visited{
-  background-color: $red;
-  color:$black;
-  @include font4;
+.part{
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-#nav1 >li >a:link{
-  color: $black;
-  @include font5;
-}
+
