@@ -256,109 +256,6 @@ $brown:#8c5b00;
 
 /*footer end*/
 
-/*download app start*/
-#download {
-  width: 150px;
-  height: 126px;
-  position: fixed;
-  top: 450px;
-  left:1440px;
-}
-
-#download-con {
-  background: #fff;
-  @include border;
-  height: 258px;
-}
-
-#down-1 {
-  text-align: center;
-  font-size: 14pt;
-  color: #302f2f;
-  margin-top: 18px;
-  padding-bottom: 18px;
-  border-bottom: 1px #ebebeb solid;
-  position: relative;
-}
-
-#download-close {
-  cursor: pointer;
-  font-size: 20px;
-  color: #ccc;
-  position: absolute;
-  top: -19px;
-  right: 4px;
-}
-
-#down-2 {
-  text-align: center;
-  margin-top: 28px;
-  margin-bottom: 28px;
-}
-
-#down-3:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: ".";
-  clear: both;
-  height: 0;
-}
-
-* html #down-3 {
-  zoom: 1;
-}
-
-*:first-child + html #down-3 {
-  zoom: 1;
-}
-
-#down-l {
-  float: left;
-  display: inline;
-  margin-left: 10px;
-  color: #a3a3a3;
-}
-
-#down-r {
-  float: left;
-  display: inline;
-  margin-left: 5px;
-  color: #a3a3a3;
-  border-left: 1px #d1d1d1 solid;
-}
-
-#down-l a {
-  display: block;
-  width: 20px;
-  height: 23px;
-  margin-left: 20px;
-}
-
-#down-r a {
-  display: block;
-  width: 20px;
-  height: 24px;
-  margin-left: 11px;
-}
-
-#android {
-  margin-left: 8px;
-}
-
-#down-l .down-txt {
-  margin-top: 5px;
-}
-
-#down-r .down-txt {
-  margin-top: 5px;
-  margin-left: 5px;
-}
-
-/*download app end*/
-
-/*download end*/
-
 #img_load{
   padding-top: 90px ;
   margin-bottom:86px
@@ -533,5 +430,141 @@ $brown:#8c5b00;
   margin-top: auto;
   margin-bottom: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*download app start*/
+#download {
+  width: 140px;
+  height: 258px;
+  position: fixed;
+  top: 440px;
+  left:1440px;
+}
+
+#download-con {
+  background: #fff;
+  @include border;
+  height: 258px;
+}
+
+#down-1 {
+  text-align: center;
+  font-size: 12pt;
+  color: #302f2f;
+  margin-top: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px #ebebeb solid;
+  position: relative;
+}
+
+#download-close {
+  cursor: pointer;
+  font-size: 20px;
+  color: #ccc;
+  position: absolute;
+  top: -19px;
+  right: 4px;
+}
+
+#down-2 {
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+#down-3:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ".";
+  clear: both;
+  height: 0;
+}
+
+* html #down-3 {
+  zoom: 1;
+}
+
+*:first-child + html #down-3 {
+  zoom: 1;
+}
+
+#down-l {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  color: #a3a3a3;
+}
+
+#down-r {
+  float: left;
+  display: inline;
+  margin-left: 5px;
+  color: #a3a3a3;
+  border-left: 1px #d1d1d1 solid;
+}
+
+#down-l a {
+  display: block;
+  width: 20px;
+  height: 23px;
+  margin-left: 20px;
+}
+
+#down-r a {
+  display: block;
+  width: 20px;
+  height: 24px;
+  margin-left: 11px;
+}
+
+#android {
+  margin-left: 8px;
+}
+
+#down-l .down-txt {
+  margin-top: 5px;
+}
+
+#down-r .down-txt {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+/*download app end*/
+
+/*download end*/
+
 
 
