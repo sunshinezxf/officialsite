@@ -240,6 +240,7 @@ $brown:#8c5b00;
 
 #footer {
   @include clear;
+
   background-color: $red ;
   height: 44px;
   width:100%;
@@ -307,6 +308,7 @@ $brown:#8c5b00;
 /*introduction related*/
 #introduction{
   height: 350px;
+  margin-bottom: 160px;
   @include border;
   >div>img{
     margin-left: 90px;
@@ -317,7 +319,7 @@ $brown:#8c5b00;
     margin-left: 30px;
     margin-top: 120px;
     font-weight: 600;
-    width: 700px;
+    width: 610px;
   }
 }
 
