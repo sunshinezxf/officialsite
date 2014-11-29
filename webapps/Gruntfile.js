@@ -125,4 +125,5 @@ module.exports = function (grunt, config) {
         'open',
         'watch'
     ]);
+    grunt.loadNpmTasks('grunt-contrib-compass');
 };

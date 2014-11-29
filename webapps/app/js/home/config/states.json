@@ -1,6 +1,6 @@
 {
     "home": {
-        "path": "/",
+        "path": "/index",
         "templateUrl": "template.html",
         "controller": "HomeCtrl",
         "default": true,
@@ -9,8 +9,14 @@
         },
         "mixins": ["state"],
         "views":{
+            "title@home":{
+                "templateUrl":"header.html"
+            },
             "content@home":{
                 "templateUrl":"/main/main.html"
+            },
+            "footer@home":{
+                "templateUrl":"footer.html"
             }
         }
     },
@@ -24,8 +30,14 @@
         },
         "mixins": ["state"],
         "views":{
+            "title@newer":{
+                "templateUrl":"header.html"
+            },
             "content@newer":{
                 "templateUrl":"/other/newer.html"
+            },
+            "footer@newer":{
+                "templateUrl":"footer.html"
             }
         }
     },
@@ -39,11 +51,17 @@
         },
         "mixins": ["state"],
         "views":{
+            "title@certification":{
+                "templateUrl":"header.html"
+            },
             "header@certification":{
                 "templateUrl":"/about/guider.html"
             },
             "content@certification":{
                 "templateUrl":"/about/certification.html"
+            },
+            "footer@certification":{
+                "templateUrl":"footer.html"
             }
         }
     },
@@ -57,11 +75,17 @@
         },
         "mixins": ["state"],
         "views":{
+            "title@introduction":{
+                "templateUrl":"header.html"
+            },
             "header@introduction":{
                 "templateUrl":"/about/guider.html"
             },
             "content@introduction":{
                 "templateUrl":"/about/introduction.html"
+            },
+            "footer@introduction":{
+                "templateUrl":"footer.html"
             }
         }
     },
@@ -75,11 +99,17 @@
         },
         "mixins": ["state"],
         "views":{
+            "title@contact":{
+                "templateUrl":"header.html"
+            },
             "header@contact":{
                 "templateUrl":"/about/guider.html"
             },
             "content@contact":{
                 "templateUrl":"/about/contactUs.html"
+            },
+            "footer@contact":{
+                "templateUrl":"footer.html"
             }
         }
     },
@@ -93,11 +123,32 @@
         },
         "mixins": ["state"],
         "views":{
+            "title@join":{
+                "templateUrl":"header.html"
+            },
             "header@join":{
                 "templateUrl":"/about/guider.html"
             },
             "content@join":{
                 "templateUrl":"/about/joinUs.html"
+            },
+            "footer@join":{
+                "templateUrl":"footer.html"
+            }
+        }
+    },
+
+    "trick":{
+        "path":"/",
+        "templateUrl":"template.html",
+        "controller": "HomeCtrl",
+        "resolve": {
+            "features": "featuresResolver"
+        },
+        "mixins": ["state"],
+        "views":{
+            "content@trick":{
+                "templateUrl":"/index.html"
             }
         }
     }

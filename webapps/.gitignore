@@ -3,7 +3,6 @@
 /.tmp/
 /dist/
 /node_modules/
-/app/bower_vendor/
 .settings/
 .project
 .idea
