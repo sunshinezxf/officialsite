@@ -41,7 +41,19 @@ module.exports = function (grunt, config) {
     config = {
         pkg: grunt.file.readJSON('package.json'),
         env: process.env['APP_ENV'] || 'dev',
-        watch: {}
+        watch: {},
+        compress:{
+            main:{
+                options:{
+                    archive:'<%= archive_name %>-<%= grunt.template.today("yyyy") %>年<%= grunt.template.today("mm") %>月<%= grunt.template.today("dd") %>日<%= grunt.template.today("h") %>时<%= grunt.template.today("TT") %>.zip'
+                },
+                expand:true,
+                cwd:paths.build,
+                src:['**/*'],
+                dest:''
+            }
+        }
+
     };
 
     var configDir = './grunt';
@@ -61,6 +73,17 @@ module.exports = function (grunt, config) {
     });
 
     grunt.initConfig(config);
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-compress');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-ftp-deploy');
+    grunt.loadNpmTasks('grunt-sftp-deploy');
+    grunt.loadNpmTasks('grunt-closure-compiler');//增加谷歌高级压缩
 
     grunt.registerTask('test:default', [
         'kuma:config',
@@ -125,5 +148,4 @@ module.exports = function (grunt, config) {
         'open',
         'watch'
     ]);
-    grunt.loadNpmTasks('grunt-contrib-compass');
 };
