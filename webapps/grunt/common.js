@@ -18,6 +18,16 @@ module.exports = function(grunt, config, paths) {
                     paths['tmp']
                 ]
             }]
+        },
+        release: {
+            files: [{
+                dot: true,
+                src: [
+                    paths['tmp'],
+                    paths['build'] + '*',
+                    paths['archive']
+                ]
+            }]
         }
     };
 

@@ -22,7 +22,8 @@ var paths = {
     'build_fonts': 'dist/fonts/',
     'tmp': '.tmp/',
     'tmp_js': '.tmp/js/',
-    'tmp_css': '.tmp/css/'
+    'tmp_css': '.tmp/css/',
+    'archive':'officialSite.zip'
 };
 
 module.exports = function (grunt, config) {
@@ -45,10 +46,10 @@ module.exports = function (grunt, config) {
         compress:{
             main:{
                 options:{
-                    archive:'<%= archive_name %>-<%= grunt.template.today("yyyy") %>年<%= grunt.template.today("mm") %>月<%= grunt.template.today("dd") %>日<%= grunt.template.today("h") %>时<%= grunt.template.today("TT") %>.zip'
+                    archive: paths['archive']
                 },
                 expand:true,
-                cwd:paths.build,
+                cwd: paths['build'],
                 src:['**/*'],
                 dest:''
             }
@@ -73,17 +74,6 @@ module.exports = function (grunt, config) {
     });
 
     grunt.initConfig(config);
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-compress');
-    grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-htmlmin');
-    grunt.loadNpmTasks('grunt-ftp-deploy');
-    grunt.loadNpmTasks('grunt-sftp-deploy');
-    grunt.loadNpmTasks('grunt-closure-compiler');//增加谷歌高级压缩
 
     grunt.registerTask('test:default', [
         'kuma:config',
@@ -129,9 +119,29 @@ module.exports = function (grunt, config) {
         'uglify',
         'concat',
         'sass:app',
+        'copy:bootstrapCss',
         'copy:frontend',
         'filerev',
         'usemin'
+    ]);
+
+    grunt.registerTask('release', [
+        'clean:release',
+        'smart-modernizr',
+        'kuma:config',
+        'copy:html',
+        'fileblocks:app',
+        'useminPrepare',
+        'ngtemplates:build',
+        'templatesconcatfix',
+        'uglify',
+        'concat',
+        'sass:app',
+        'copy:bootstrapCss',
+        'copy:frontend',
+        'filerev',
+        'usemin',
+        'compress'
     ]);
 
     grunt.registerTask('default', [
@@ -144,6 +154,7 @@ module.exports = function (grunt, config) {
         'fileblocks:app',
         'karma:watch',
         'sass:app',
+        'copy:bootstrapCss',
         'connect:app',
         'open',
         'watch'

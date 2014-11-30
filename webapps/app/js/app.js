@@ -10,7 +10,8 @@ angular.module('app', ['app.home', 'app.common','ngSanitize', 'ngAnimate', 'ui.r
     .value('version', '0.1')
     .config(['config', '$httpProvider', '$stateProvider', '$urlRouterProvider','$locationProvider', 'template',
         function(config, $httpProvider, $stateProvider, $urlRouterProvider, $locationProvider, template) {
-            $locationProvider.html5Mode(true);
+           $locationProvider.html5Mode(false).hashPrefix('!');
+
             var _states = config['states'], _defaultPath = '/',
                 _registerState = function(name, stateConfig) {
 

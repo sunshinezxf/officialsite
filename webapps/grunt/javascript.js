@@ -82,7 +82,7 @@ module.exports = function(grunt, config, paths) {
     config['fileblocks'] = {
         options: {
             removeFiles: true,
-            cwd: paths['app']
+                cwd: paths['app']
         },
         app: {
             src: paths['tmp'] + 'index.html',
@@ -112,7 +112,7 @@ module.exports = function(grunt, config, paths) {
         javascript: {
             src: [
                 paths['build_js'] + '*.js'
-            ]
+            ]  
         }
     });
 
