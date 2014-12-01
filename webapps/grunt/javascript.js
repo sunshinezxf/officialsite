@@ -78,7 +78,7 @@ module.exports = function(grunt, config, paths) {
             }
         }
     };
-
+    
     config['fileblocks'] = {
         options: {
             removeFiles: true,
