@@ -1,6 +1,6 @@
 {
     "home": {
-        "path": "/index",
+        "path": "/",
         "templateUrl": "template.html",
         "controller": "HomeCtrl",
         "default": true,

@@ -32,6 +32,20 @@ module.exports = function(grunt, config, paths) {
     };
 
     config['copy'] = _.extend({}, config['copy'], {
+        bootstrapCss : {
+            files: [
+            {
+                expand: true,
+                dot: true,
+                cwd: paths['bower_vendors']+'bootstrap/dist/css',
+                dest: paths['tmp_css'],
+                src: [
+                    '*.css'
+                ]
+            }
+            ]
+        },
+
         frontend: {
             files: [{
                 expand: true,
@@ -41,8 +55,8 @@ module.exports = function(grunt, config, paths) {
                 src: [
                     '*.{ico,png,txt}',
                     '.htaccess',
-                    'img/{,*/}*',
-                    'fonts/{,*/}*'
+                    'img/{,**/}*',
+                    'fonts/{,**/}*'
                 ]
             }, {
                 expand: true,
@@ -60,7 +74,9 @@ module.exports = function(grunt, config, paths) {
                 src: [
                     '*.css'
                 ]
-            }, {
+            },
+            
+             {
                 expand: true,
                 dot: true,
                 cwd: paths['tmp_js'],
