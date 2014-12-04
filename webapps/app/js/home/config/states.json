@@ -13,7 +13,7 @@
                 "templateUrl":"header.html"
             },
             "content@home":{
-                "templateUrl":"/main/main.html"
+                "templateUrl":"main/main.html"
             },
             "footer@home":{
                 "templateUrl":"footer.html"
@@ -34,7 +34,7 @@
                 "templateUrl":"header.html"
             },
             "content@newer":{
-                "templateUrl":"/other/newer.html"
+                "templateUrl":"other/newer.html"
             },
             "footer@newer":{
                 "templateUrl":"footer.html"
@@ -55,10 +55,10 @@
                 "templateUrl":"header.html"
             },
             "header@certification":{
-                "templateUrl":"/about/guider.html"
+                "templateUrl":"about/guider.html"
             },
             "content@certification":{
-                "templateUrl":"/about/certification.html"
+                "templateUrl":"about/certification.html"
             },
             "footer@certification":{
                 "templateUrl":"footer.html"
@@ -79,10 +79,10 @@
                 "templateUrl":"header.html"
             },
             "header@introduction":{
-                "templateUrl":"/about/guider.html"
+                "templateUrl":"about/guider.html"
             },
             "content@introduction":{
-                "templateUrl":"/about/introduction.html"
+                "templateUrl":"about/introduction.html"
             },
             "footer@introduction":{
                 "templateUrl":"footer.html"
@@ -103,10 +103,10 @@
                 "templateUrl":"header.html"
             },
             "header@contact":{
-                "templateUrl":"/about/guider.html"
+                "templateUrl":"about/guider.html"
             },
             "content@contact":{
-                "templateUrl":"/about/contactUs.html"
+                "templateUrl":"about/contactUs.html"
             },
             "footer@contact":{
                 "templateUrl":"footer.html"
@@ -127,10 +127,10 @@
                 "templateUrl":"header.html"
             },
             "header@join":{
-                "templateUrl":"/about/guider.html"
+                "templateUrl":"about/guider.html"
             },
             "content@join":{
-                "templateUrl":"/about/joinUs.html"
+                "templateUrl":"about/joinUs.html"
             },
             "footer@join":{
                 "templateUrl":"footer.html"
@@ -148,7 +148,7 @@
         "mixins": ["state"],
         "views":{
             "content@trick":{
-                "templateUrl":"/index.html"
+                "templateUrl":"index.html"
             }
         }
     }

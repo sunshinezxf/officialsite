@@ -98,12 +98,13 @@ module.exports = function(grunt, config, paths) {
             src: [
                 paths['build_fonts'] + '**/*.{svg,eot,otf,ttf,woff}'
             ]
-        },
-        images: {
-            src: [
-                paths['build_img'] + '**/*.{png,jpg,jpeg,gif,webp,svg}'
-            ]
         }
+//        ,
+//        images: {
+//            src: [
+//                paths['build_img'] + '**/*.{png,jpg,jpeg,gif,webp,svg}'
+//            ]
+//        }
     });
 
     config['svg2png'] = {

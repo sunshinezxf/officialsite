@@ -63,7 +63,7 @@ $brown:#8c5b00;
 }
 
 ._divider{
-  background-image:url(../../../img/general/line/4.jpg);
+  background-image:url(../img/general/line/4.jpg);
   background-repeat: repeat center 0 ;
   height: 3px ;
 }
@@ -175,12 +175,28 @@ $brown:#8c5b00;
 
 #board{
   margin-top: 20px;
-
   height: 260px;
   >div{
     @include border;
     width: 495px;
     background-color: $white;
+    >p >span{
+      font-size: 18px;
+      font-weight: 900;
+    }
+    >ul{
+      text-align: left;
+      >li >div{
+        width:300px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        display: inline-block
+      }
+      >li >span{
+        float: right;
+      }
+    }
   }
 }
 
@@ -406,7 +422,7 @@ $brown:#8c5b00;
 
 .back{
   background-repeat: repeat-x repeat-y ;
-  background-image:url(../../../img/general/newer/back/8.jpg) ;
+  background-image:url(../img/general/newer/back/8.jpg) ;
   height: 700px;
   >div>img{
     margin-top: 144px;
