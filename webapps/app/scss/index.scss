@@ -175,12 +175,28 @@ $brown:#8c5b00;
 
 #board{
   margin-top: 20px;
-
   height: 260px;
   >div{
     @include border;
     width: 495px;
     background-color: $white;
+    >p >span{
+      font-size: 18px;
+      font-weight: 900;
+    }
+    >ul{
+      text-align: left;
+      >li >div{
+        width:300px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+        display: inline-block
+      }
+      >li >span{
+        float: right;
+      }
+    }
   }
 }
 
@@ -467,7 +483,7 @@ $brown:#8c5b00;
 
 /*download app start*/
 #download {
-  width: 140px;
+  width: 120px;
   height: 258px;
   position: fixed;
   top: 440px;
@@ -524,15 +540,16 @@ $brown:#8c5b00;
 
 #down-l {
   float: left;
+  width: 60px;
   display: inline;
-  margin-left: 10px;
+  margin-left: 0px;
   color: #a3a3a3;
 }
 
 #down-r {
   float: left;
   display: inline;
-  margin-left: 5px;
+  margin-left: 0px;
   color: #a3a3a3;
   border-left: 1px #d1d1d1 solid;
 }
@@ -541,14 +558,12 @@ $brown:#8c5b00;
   display: block;
   width: 20px;
   height: 23px;
-  margin-left: 20px;
 }
 
 #down-r a {
   display: block;
   width: 20px;
   height: 24px;
-  margin-left: 11px;
 }
 
 #android {
