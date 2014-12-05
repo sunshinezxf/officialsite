@@ -175,28 +175,12 @@ $brown:#8c5b00;
 
 #board{
   margin-top: 20px;
+
   height: 260px;
   >div{
     @include border;
     width: 495px;
     background-color: $white;
-    >p >span{
-      font-size: 18px;
-      font-weight: 900;
-    }
-    >ul{
-      text-align: left;
-      >li >div{
-        width:300px;
-        overflow:hidden;
-        text-overflow:ellipsis;
-        white-space:nowrap;
-        display: inline-block
-      }
-      >li >span{
-        float: right;
-      }
-    }
   }
 }
 

@@ -2,7 +2,6 @@
     "home": {
         "path": "/",
         "templateUrl": "template.html",
-        "controller": "HomeCtrl",
         "default": true,
         "resolve": {
             "features": "featuresResolver"
@@ -24,7 +23,6 @@
     "newer":{
         "path": "/newer",
         "templateUrl": "template.html",
-        "controller": "HomeCtrl",
         "resolve": {
             "features": "featuresResolver"
         },
@@ -45,7 +43,6 @@
     "certification":{
         "path": "/about/certification",
         "templateUrl": "template.html",
-        "controller": "HomeCtrl",
         "resolve": {
             "features": "featuresResolver"
         },
@@ -69,7 +66,6 @@
     "introduction":{
         "path": "/about/introduction",
         "templateUrl": "template.html",
-        "controller": "HomeCtrl",
         "resolve": {
             "features": "featuresResolver"
         },
@@ -93,7 +89,6 @@
     "contact":{
         "path": "/about/contact",
         "templateUrl": "template.html",
-        "controller": "HomeCtrl",
         "resolve": {
             "features": "featuresResolver"
         },
@@ -117,7 +112,6 @@
     "join":{
         "path": "/about/join",
         "templateUrl": "template.html",
-        "controller": "HomeCtrl",
         "resolve": {
             "features": "featuresResolver"
         },
@@ -141,7 +135,6 @@
     "trick":{
         "path":"/",
         "templateUrl":"template.html",
-        "controller": "HomeCtrl",
         "resolve": {
             "features": "featuresResolver"
         },

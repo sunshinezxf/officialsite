@@ -1,0 +1,572 @@
+/*shared*/
+
+$red: #e54d42;
+$white: #fff;
+$black: #000;
+$gray: #ebebeb;
+$green: #00FF00;
+$orange: #FFBB66;
+$brown:#8c5b00;
+
+@mixin clear {
+  clear : both;
+}
+
+@mixin relative{
+  position: relative;
+}
+
+@mixin border{
+  border: 1px solid  $gray;
+}
+
+@mixin font1{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@mixin font2{
+  font-size:20px;
+  font-weight: 100;
+}
+
+@mixin font3{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+@mixin font4{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@mixin font5{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@mixin font6{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* end */
+.module {
+  @include relative;
+  width: 1000px;
+}
+
+.mid {
+  padding-left: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+._divider{
+  background-image:url(../../../img/general/line/4.jpg);
+  background-repeat: repeat center 0 ;
+  height: 3px ;
+}
+
+/*float start*/
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.klear {
+  clear: both;
+}
+
+/*float end*/
+/*header started*/
+#nav{
+  width: 300px;
+  padding-top: 25px;
+  margin-left: 300px;
+  >li{
+    >a{
+      @include font1;
+      color: $black;
+    }
+    :visited{
+      background-color: $red;
+    }
+    :hover{
+      background-color: $red;
+      >a{
+        color:$white;
+      }
+    }
+    &:link{
+      background-color: $white;
+    }
+  }
+}
+
+#header li.active{
+    background-color:$red;
+}
+
+#header{
+  height: 86px;
+  >div {
+    padding-top: 11px;
+    >p{
+      color: #828282;
+      @include font2;
+      >span{
+        color: $red;
+        font-size: 18px;
+      }
+      >img{
+        padding-top: 0px;
+      }
+    }
+  }
+
+}
+
+/*header end*/
+
+/*boarder start*/
+.boarder {
+  padding: 0px;
+  margin: 0px;
+  bottom: 0px;
+}
+
+/*boarder end*/
+
+/*main start */
+#myCarousel{
+  height: 330px;
+  padding-bottom: 20px;
+}
+
+#jd{
+  background-color: $white;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @include clear;
+  @include border;
+  height: 260px;
+  >div{
+    margin-left: 40px;
+    margin-top: 10px;
+    text-align: center;
+    width: 400px;
+    >h3{
+      @include font3;
+      >span{
+        color:$orange;
+        font-size:30px;
+      }
+    }
+    >p{
+      @include font5;
+    }
+  }
+}
+
+#board{
+  margin-top: 20px;
+
+  height: 260px;
+  >div{
+    @include border;
+    width: 495px;
+    background-color: $white;
+  }
+}
+
+/*main end */
+
+/*footer start*/
+.footer {
+  background-color: $white;
+  margin-bottom: 0px;
+  height: 170px;
+  text-align: center;
+}
+
+#footer-top {
+  height: 60px;
+  @include clear;
+}
+
+#footer-middle {
+  height: 56px;
+  @include clear;
+}
+
+#ft-left{
+ float:left;
+  >span >a{
+    color: #696969;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+#ft-right{
+  float:right;
+  text-align: left;
+  padding-right: 21px;
+  padding-bottom: 0px;
+  >p{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Microsoft YaHei", "MicrosoftJhengHei";
+  }
+}
+#fm-left{
+  @include clear;
+}
+#fm-right{
+  >img{
+    padding-bottom: 20px;
+  }
+  >span{
+    font-size: 36px;
+    padding-left: 20px;
+    color: $red;
+  }
+}
+
+#footer {
+  @include clear;
+
+  background-color: $red ;
+  height: 44px;
+  width:100%;
+  >p {
+    padding-top: 10px;
+    @include font2;
+    font-family: Arial;
+    color:$white;
+    >span{
+      font-size: 12px;
+    }
+  }
+}
+
+/*footer end*/
+
+#img_load{
+  padding-top: 90px ;
+  margin-bottom:86px
+}
+
+#myCarousel >div{
+  height: 330px;
+  >div >img{
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* guider start */
+#guider{
+  margin-top: 20px;
+  width: 1000px;
+  height:50px;
+}
+
+#nav1{
+  background-color: $gray;
+  width: 1000px;
+  >li.active{
+    border-bottom: 4px $red solid;
+  }
+  >li>a{
+    font-size: 18px;
+    color: $black;
+  }
+}
+/* guider end */
+
+/* certification start */
+
+#cer{
+  @include border;
+  margin-bottom: 46px;
+  text-align: center;
+  height: 1632px;
+  >div{
+    height: 544px;
+  }
+}
+
+/* certification end */
+
+
+/*introduction related*/
+#introduction{
+  height: 350px;
+  margin-bottom: 160px;
+  @include border;
+  >div>img{
+    margin-left: 90px;
+    margin-top: 90px;
+    width: 150px;
+  }
+  >div >p{
+    margin-left: 30px;
+    margin-top: 120px;
+    font-weight: 600;
+    width: 610px;
+  }
+}
+
+/* end */
+
+/* contact start */
+#contact{
+  @include border;
+  height: 670px;
+  >div {
+    margin-top: 80px;
+    >img{
+      margin-right: 80px;
+    }
+  }
+}
+
+#contact_l{
+  width: 480px;
+}
+
+.list_div{
+  margin-top: 20px;
+  margin-left: 70px;
+  width: 400px;
+  >div{
+    float: left;
+    >h4 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-left: 20px;
+    }
+    >p {
+      margin-left: 20px;
+      font-weight: 600;
+    }
+  }
+}
+
+/* contact end */
+
+/* join us start */
+#join{
+  display: table;
+  height: 100%;
+  @include border;
+  margin-bottom: 70px;
+}
+
+#join_l{
+  margin-left: 54px;
+  margin-top: 48px;
+  width: 382px;
+  >h4{
+    font-size: 25pt;
+    font-weight: 800;
+  }
+  >p{
+    font-weight: 400 ;
+    >span{
+      font-weight: 600;
+    }
+  }
+}
+
+#accordion{
+  margin-right: 46px;
+  margin-top: 44px;
+  width: 456px;
+  margin-bottom: 200px;
+}
+
+/* join us end */
+
+#newer{
+  margin-bottom: 86px;
+  h2{
+    font-size: 22px;
+  }
+  >img{
+      padding-top: 14px;
+  }
+}
+
+.back{
+  background-repeat: repeat-x repeat-y ;
+  background-image:url(../../../img/general/newer/back/8.jpg) ;
+  height: 700px;
+  >div>img{
+    margin-top: 144px;
+  }
+}
+
+#back{
+  height: 100px;
+  padding-top: 30px;
+  width: 820px;
+  h2{
+    @include font6;
+    color: $brown;
+  }
+  p{
+    @include font5;
+    color: $brown;
+  }
+}
+
+.part{
+  text-align: left;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*download app start*/
+#download {
+  width: 140px;
+  height: 258px;
+  position: fixed;
+  top: 440px;
+  left:1440px;
+}
+
+#download-con {
+  background: #fff;
+  @include border;
+  height: 258px;
+}
+
+#down-1 {
+  text-align: center;
+  font-size: 12pt;
+  color: #302f2f;
+  margin-top: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px #ebebeb solid;
+  position: relative;
+}
+
+#download-close {
+  cursor: pointer;
+  font-size: 20px;
+  color: #ccc;
+  position: absolute;
+  top: -19px;
+  right: 4px;
+}
+
+#down-2 {
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+#down-3:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: ".";
+  clear: both;
+  height: 0;
+}
+
+* html #down-3 {
+  zoom: 1;
+}
+
+*:first-child + html #down-3 {
+  zoom: 1;
+}
+
+#down-l {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  color: #a3a3a3;
+}
+
+#down-r {
+  float: left;
+  display: inline;
+  margin-left: 5px;
+  color: #a3a3a3;
+  border-left: 1px #d1d1d1 solid;
+}
+
+#down-l a {
+  display: block;
+  width: 20px;
+  height: 23px;
+  margin-left: 20px;
+}
+
+#down-r a {
+  display: block;
+  width: 20px;
+  height: 24px;
+  margin-left: 11px;
+}
+
+#android {
+  margin-left: 8px;
+}
+
+#down-l .down-txt {
+  margin-top: 5px;
+}
+
+#down-r .down-txt {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+/*download app end*/
+
+/*download end*/
+
+
+

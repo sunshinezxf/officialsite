@@ -121,7 +121,7 @@ module.exports = function (grunt, config) {
         'sass:app',
         'copy:bootstrapCss',
         'copy:frontend',
-        'filerev',
+        // 'filerev',
         'usemin'
     ]);
 

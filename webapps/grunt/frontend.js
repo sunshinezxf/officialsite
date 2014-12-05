@@ -35,7 +35,7 @@ module.exports = function(grunt, config, paths) {
         bootstrapCss : {
             files: [
             {
-                expand: true,
+               expand: true,
                 dot: true,
                 cwd: paths['bower_vendors']+'bootstrap/dist/css',
                 dest: paths['tmp_css'],
@@ -45,7 +45,7 @@ module.exports = function(grunt, config, paths) {
             }
             ]
         },
-
+        
         frontend: {
             files: [{
                 expand: true,
@@ -56,7 +56,7 @@ module.exports = function(grunt, config, paths) {
                     '*.{ico,png,txt}',
                     '.htaccess',
                     'img/{,**/}*',
-                    'fonts/{,**/}*'
+                    'fonts/{,*/}*'
                 ]
             }, {
                 expand: true,
@@ -74,15 +74,21 @@ module.exports = function(grunt, config, paths) {
                 src: [
                     '*.css'
                 ]
-            },
-            
-             {
+            }, {
                 expand: true,
                 dot: true,
                 cwd: paths['tmp_js'],
                 dest: paths['build_js'],
                 src: [
                     'modernizr-custom.js'
+                ]
+            }, {
+               expand: true,
+                dot: true,
+                cwd: paths['bower_vendors']+'angular-ui-router/release',
+                dest: paths['build'],
+                src: [
+                    'angular-ui-router.js'
                 ]
             }]
         }
@@ -99,12 +105,12 @@ module.exports = function(grunt, config, paths) {
                 paths['build_fonts'] + '**/*.{svg,eot,otf,ttf,woff}'
             ]
         }
-//        ,
-//        images: {
-//            src: [
-//                paths['build_img'] + '**/*.{png,jpg,jpeg,gif,webp,svg}'
-//            ]
-//        }
+        ,
+        images: {
+            src: [
+                paths['build_img'] + '**/*.{png,jpg,jpeg,gif,webp,svg}'
+            ]
+        }
     });
 
     config['svg2png'] = {

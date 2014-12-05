@@ -28,7 +28,7 @@ module.exports = function(grunt, config, paths) {
                     paths['archive']
                 ]
             }]
-        }
+         }
     };
 
 };
