@@ -7,6 +7,7 @@ $gray: #ebebeb;
 $green: #00FF00;
 $orange: #FFBB66;
 $brown:#8c5b00;
+$grey:#f4f4f4;
 
 @mixin clear {
   clear : both;
@@ -112,6 +113,7 @@ $brown:#8c5b00;
 }
 
 #header{
+  z-index: -1;
   height: 86px;
   >div {
     padding-top: 11px;
@@ -154,7 +156,7 @@ $brown:#8c5b00;
   padding-bottom: 20px;
   @include clear;
   @include border;
-  height: 260px;
+  height: 460px;
   >div{
     margin-left: 40px;
     margin-top: 10px;
@@ -179,6 +181,7 @@ $brown:#8c5b00;
   >div{
     @include border;
     width: 495px;
+    height: 260px;
     background-color: $white;
     >p >span{
       font-size: 18px;
@@ -187,6 +190,7 @@ $brown:#8c5b00;
     >ul{
       text-align: left;
       >li >div{
+
         width:300px;
         overflow:hidden;
         text-overflow:ellipsis;
@@ -205,12 +209,13 @@ $brown:#8c5b00;
 /*footer start*/
 .footer {
   background-color: $white;
-  margin-bottom: 0px;
+  margin-top: 20px;
   height: 170px;
   text-align: center;
 }
 
 #footer-top {
+  padding-top: 20px;
   height: 60px;
   @include clear;
 }
@@ -221,6 +226,7 @@ $brown:#8c5b00;
 }
 
 #ft-left{
+  padding-top: 20px;
  float:left;
   >span >a{
     color: #696969;
@@ -233,7 +239,7 @@ $brown:#8c5b00;
   float:right;
   text-align: left;
   padding-right: 21px;
-  padding-bottom: 0px;
+  padding-top: 20px;
   >p{
     font-size: 14px;
     font-weight: 300;
@@ -256,12 +262,11 @@ $brown:#8c5b00;
 
 #footer {
   @include clear;
-
   background-color: $red ;
   height: 44px;
   width:100%;
   >p {
-    padding-top: 10px;
+    padding-top: 5px;
     @include font2;
     font-family: Arial;
     color:$white;
@@ -324,7 +329,7 @@ $brown:#8c5b00;
 /*introduction related*/
 #introduction{
   height: 350px;
-  margin-bottom: 160px;
+  margin-bottom: 305px;
   @include border;
   >div>img{
     margin-left: 90px;
@@ -332,6 +337,10 @@ $brown:#8c5b00;
     width: 150px;
   }
   >div >p{
+    >span{
+      font-size: 30px;
+      font-weight: 800;
+    }
     margin-left: 30px;
     margin-top: 120px;
     font-weight: 600;
@@ -379,16 +388,15 @@ $brown:#8c5b00;
 
 /* join us start */
 #join{
-  display: table;
-  height: 100%;
   @include border;
+  height: 680px;
   margin-bottom: 70px;
 }
 
 #join_l{
   margin-left: 54px;
   margin-top: 48px;
-  width: 382px;
+  width: 300px;
   >h4{
     font-size: 25pt;
     font-weight: 800;
@@ -404,7 +412,7 @@ $brown:#8c5b00;
 #accordion{
   margin-right: 46px;
   margin-top: 44px;
-  width: 456px;
+  width: 538px;
   margin-bottom: 200px;
 }
 
@@ -448,36 +456,6 @@ $brown:#8c5b00;
   margin-top: auto;
   margin-bottom: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
