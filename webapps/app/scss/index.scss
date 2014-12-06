@@ -170,7 +170,7 @@ $grey:#f4f4f4;
         font-size:30px;
       }
     }
-    >p{
+    >span{
       @include font5;
     }
   }
@@ -242,6 +242,9 @@ $grey:#f4f4f4;
   padding-right: 21px;
   padding-top: 20px;
   >p{
+    > a {
+      color: #000000;
+    }
     font-size: 14px;
     font-weight: 300;
     font-family: "Microsoft YaHei", "MicrosoftJhengHei";
@@ -355,6 +358,7 @@ $grey:#f4f4f4;
 #contact{
   @include border;
   height: 670px;
+  margin-bottom: 100px;
   >div {
     margin-top: 80px;
     >img{
@@ -385,6 +389,9 @@ $grey:#f4f4f4;
       margin-left: 20px;
     }
     >p {
+      >a{
+        color: #000000;
+      }
       margin-left: 20px;
       font-weight: 600;
     }
@@ -410,8 +417,10 @@ $grey:#f4f4f4;
   }
   >p{
     font-weight: 400 ;
-    >span{
-      font-weight: 600;
+  }
+  >#mail{
+    >a{
+      color: #000000;
     }
   }
 }
