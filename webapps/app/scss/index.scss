@@ -88,6 +88,7 @@ $grey:#f4f4f4;
   width: 300px;
   padding-top: 25px;
   margin-left: 300px;
+
   >li{
     >a{
       @include font1;
@@ -114,7 +115,6 @@ $grey:#f4f4f4;
 
 #header{
   z-index: -1;
-  width: 90%;
   height: 86px;
   >div {
     padding-top: 11px;
@@ -147,7 +147,11 @@ $grey:#f4f4f4;
 /*main start */
 #myCarousel{
   height: 330px;
+  min-width: 1000px;
   padding-bottom: 20px;
+  >.carousel-inner{
+    min-width: 1000px;
+  }
 }
 
 #jd{
@@ -268,7 +272,6 @@ $grey:#f4f4f4;
   @include clear;
   background-color: $red ;
   height: 44px;
-  width:100%;
   >p {
     padding-top: 5px;
     @include font2;
