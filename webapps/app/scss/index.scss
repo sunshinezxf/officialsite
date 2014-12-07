@@ -85,13 +85,22 @@ $grey:#f4f4f4;
 /*float end*/
 /*header started*/
 #nav{
-  width: 300px;
-  padding-top: 25px;
-  margin-left: 300px;
-
-  >li{
+  width: 500px;
+  padding-top: 20px;
+  height: 60px;
+  margin-left: 500px;
+  >span.bt{
+    height: 66px;
     >a{
       @include font1;
+      text-align: center;
+      line-height: 66px;
+      width: 80px;
+      margin-left: 20px;
+      text-decoration: none;
+      text-indent: 0;
+      overflow: hidden;
+      float: left;
       color: $black;
     }
     :visited{
@@ -103,21 +112,12 @@ $grey:#f4f4f4;
         color:$white;
       }
     }
-    &:link{
-      background-color: $white;
-    }
   }
-}
-
-#header li.active{
-    background-color:$red;
-}
-
-#header{
-  z-index: -1;
-  height: 86px;
-  >div {
-    padding-top: 11px;
+  >span.active{
+    height: 66px;
+    background-color: $red;
+  }
+  >#fr{
     >p{
       color: #828282;
       @include font2;
@@ -130,7 +130,11 @@ $grey:#f4f4f4;
       }
     }
   }
+}
 
+#header{
+  z-index: -1;
+  height: 86px;
 }
 
 /*header end*/
@@ -307,13 +311,20 @@ $grey:#f4f4f4;
 
 #nav1{
   background-color: $gray;
+  height: 50px;
   width: 1000px;
-  >li.active{
+  >span.active{
     border-bottom: 4px $red solid;
   }
-  >li>a{
-    font-size: 18px;
-    color: $black;
+  >span{
+    float: left;
+    >a {
+       line-height: 46px;
+       margin-left: 20px;
+       margin-right: 20px;
+       font-size: 18px;
+       color: $black;
+     }
   }
 }
 /* guider end */
