@@ -52,17 +52,22 @@
 <!-- endbuild -->
 <script>
     function load(){
-        var agent= window.navigator.userAgent.toLowerCase();
-        if(agent.indexOf("iphone") >0){
-            location.href="/default.html";
-        }else if(agent.indexOf("ipad") >0){
-            location.href="/default.html";
-        }else if(agent.indexOf("android") >0){
-            location.href="/default.html";
-        }else if(agent.indexOf("bb") >0){
-            location.href="/default.html";
-        }else{
+        var url=location.href.toLowerCase();
+        if(url.indexOf("about")>0){
+//            alert("about");
+            $("#about").addClass("active");
         }
+//        var agent= window.navigator.userAgent.toLowerCase();
+//        if(agent.indexOf("iphone") >0){
+//            location.href="/default.html";
+//        }else if(agent.indexOf("ipad") >0){
+//            location.href="/default.html";
+//        }else if(agent.indexOf("android") >0){
+//            location.href="/default.html";
+//        }else if(agent.indexOf("bb") >0){
+//            location.href="/default.html";
+//        }else{
+//        }
     }
 </script>
 <script type="text/javascript" src="angular-ui-router.js"></script>
